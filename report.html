@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quark</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/collapse/style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src="js/collapse/script.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/toggle/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/report.css">
+	<link rel="stylesheet" href="css/score/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/report.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/simple-search-bar/style.css">
+	<link rel="stylesheet" href="css/circular-progress/style.css">
+
+
+</head>
+
+<body style="overflow-y: scroll; overflow-x: hidden;">
+
+	<div id="container" class="warp">
+		<div id="head">
+			<a href="home.html"><img class="logo" src="https://i.imgur.com/os4Va2t.png"></a>
+			<div class="right">
+				<nav class="the-nav">
+					<ul class="flex_nav">
+						<li><a class="hover" href="home.html">Home</a></li>
+						<li><a class="hover" href="index.html">Upload</a></li>
+						<li><a class="hover" href="about.html">About Us</a></li>
+						<li><a class="hover" href="#">Twitter</a></li>
+						<li><a class="hover" href="https://github.com/quark-engine/quark-engine" target="https://github.com/quark-engine/quark-engine">Github</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<span class="hint3" showhints="Score：75">
+		<div class="score" style="height:175px;">
+
+			<section class="container">
+
+			
+
+				<div id="circ-cont" data-pct="100">
+					<svg id="svg" width="200" height="200"  viewBox="-120 20 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+						<circle r="120" cx="150" cy="150" fill="transparent" stroke-dashoffset="0"></circle>
+						<circle id="bar" r="120" cx="150" cy="150" fill="transparent" stroke-dasharray="753.98" stroke-dashoffset="0" style="stroke:#E51010"></circle>
+					</svg>
+
+					<img class="high" style="width: 90px; padding-top: 40px; padding-left: 25px;" src="https://i.imgur.com/6LH0QNP.png">
+
+					<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+					<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+					<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+					<script src="js/circular-progress/script.js"></script>
+
+			</section>
+
+
+		</div>
+
+			</span>
+
+		<table class="rtable">
+			<thead>
+				<tr>
+					<th>File Name</th>
+					<th>File Size</th>
+					<th>File Hash</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="fontW">
+					<td>Hello.apk <img class="riskLevel" src="https://i.imgur.com/8Gzz7Od.png"></td>
+					　 <td>50.6 MB</td>
+					<td>6db1316d5cacc06ba7f9b8c79c630703</td>
+				</tr>
+
+
+			</tbody>
+		</table>
+
+
+
+		<div class="body main">
+			<div class="robertL">
+				<span class="hint" showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/8dd9ymp.png"></span>
+			</div>
+
+			<div class="robertR">
+				<span class="hint2" showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/stNkyI6.png"></span>
+			</div>
+
+			<div class="middle_nav">
+				<p class="report">Report</p>
+				<div class="line"> </div>
+				<div class="choose">
+					<select id="confidence">
+						<option value="hide"> Confidence</option>
+						<option value="20" rel="icon-temperature">20%</option>
+						<option value="40">40%</option>
+						<option value="60">60%</option>
+						<option value="80">80%</option>
+						<option value="100">100%</option>
+						<option value="all">All</option>
+					</select>
+				</div>
+				<div class="wrap2">
+					<div class="search">
+						<input type="text" class="searchTerm" placeholder=" Search......">
+						<button type="submit" class="searchButton">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="close">
+					<input type="checkbox" id="try" class="plus-minus">
+				</div>
+			</div>
+
+			<div class="mainReport">
+				<div class="detail">
+					<div class="container2 container">
+						<div class="col-md-6 col-sm-6">
+
+							<div class="panel-group wrap" id="bs-collapse">
+
+								<div class="panel">
+
+									<div class="panel-heading">
+										<p class="name">Send Location via SMS</p>
+										<h4 class="panel-title">
+
+											<a data-toggle="collapse" data-parent="#" href="#one">
+
+												<img class="iconS" src="https://i.imgur.com/khSXVLK.png">
+												<p class="margin_right">100%</p>
+											</a>
+
+										</h4>
+									</div>
+									<div id="one" class="panel-collapse collapse in">
+										<div class="panel-body">
+
+											<div class="detailBar2">
+												<div class="pinkBar2 flip1_1">
+													<p class="detailInf">Permission Request</p>
+													<img id="my-img" src="https://i.imgur.com/212sxBe.png">
+													<div class="detailDiv find-div-body inform1_1" id="collapseOne" class="panel-collapse collapse in">
+
+														getCellLocation <br>
+														sendTextMessage <br>
+
+													</div>
+												</div>
+
+												<div class="pinkBar2 flip1_2">
+													<p class="detailInf ">Native API Usage</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform1_2">
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+														sendTextMessage <br>
+
+													</div>
+
+												</div>
+												<div class="pinkBar2 flip1_3">
+													<p class="detailInf ">Native API Combination</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform1_3">
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+													</div>
+
+												</div>
+												<div class="pinkBar2 flip1_4">
+													<p class="detailInf ">Native API Sequence</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform1_4">
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+
+
+													</div>
+
+												</div>
+												<div class="pinkBar2 flip1_5">
+													<p class="detailInf "> Native API Use Same Parameter</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform1_5">
+														getCellLocation <br>
+
+													</div>
+
+												</div>
+
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<!-- end of panel -->
+
+								<div class="panel">
+									<div class="panel-heading">
+										<p class="name">Call phone automatically</p>
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#" href="#two">
+												<img class="iconS" src="https://i.imgur.com/xi3ik2H.png">
+												<p class="margin_right">80%</p>
+											</a>
+										</h4>
+									</div>
+									<div id="two" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="detailBar2">
+												<div class="pinkBar2 flip2_1">
+													<p class="detailInf">Permission Request</p>
+													<img id="my-img" src="https://i.imgur.com/212sxBe.png">
+													<div class="detailDiv find-div-body inform2_1">
+														getCellLocation <br>
+
+													</div>
+												</div>
+												<div class="pinkBar2 flip2_2">
+													<p class="detailInf ">Native API Usage</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform2_2">
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+
+													</div>
+												</div>
+												<div class="pinkBar2 flip2_3">
+													<p class="detailInf ">Native API Combination</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform2_3">
+														getCellLocation <br>
+														sendTextMessage <br>
+
+													</div>
+												</div>
+												<div class="pinkBar2 flip2_4">
+													<p class="detailInf ">Native API Sequence</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+													<div class="detailDiv find-div-body inform2_4">
+														getCellLocation <br>
+														sendTextMessage <br>
+														getCellLocation <br>
+
+													</div>
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf "> &nbsp </p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<!-- end of panel -->
+
+								<div class="panel">
+									<div class="panel-heading">
+										<p class="name">Delete SMS after parsing</p>
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#" href="#three">
+												<img class="iconS" src="https://i.imgur.com/Y7xx2jE.png">
+												<p class="margin_right">60%</p>
+											</a>
+										</h4>
+									</div>
+									<div id="three" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="detailBar2">
+												<div class="pinkBar2">
+													<p class="detailInf">Permission Request</p>
+													<img id="my-img" src="https://i.imgur.com/212sxBe.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">Native API Usage</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">Native API Combination</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">&nbsp</p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf "> &nbsp </p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end of panel -->
+
+								<div class="panel">
+									<div class="panel-heading">
+										<p class="name">Download files via http get</p>
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#" href="#four">
+												<img class="iconS" src="https://i.imgur.com/cVHGAtL.png">
+												<p class="margin_right">40%</p>
+											</a>
+										</h4>
+									</div>
+									<div id="four" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="detailBar2">
+												<div class="pinkBar2">
+													<p class="detailInf">Permission Request</p>
+													<img id="my-img" src="https://i.imgur.com/212sxBe.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">Native API Usage</p>
+													<img id="my-img2" src="https://i.imgur.com/lq3yt8u.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">&nbsp</p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf ">&nbsp</p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+												<div class="pinkBar2">
+													<p class="detailInf "> &nbsp </p>
+													<img src="https://i.imgur.com/wwHbNgP.png">
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end of panel -->
+
+							</div>
+							<!-- end of #bs-collapse  -->
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="foot">
+				<div class="dashB">
+					Dashboard
+					<div class="boards">
+
+						<div class="googlePlay">
+
+							<img class="Blogo" src="https://i.imgur.com/1YhfR9j.png">
+
+							<div class="imfor">
+
+								<p class="Malware">Malware</p>
+								<p class="num">86,127</p>
+
+							</div>
+
+							<div class="clear"> </div>
+
+						</div>
+						<div class="googlePlay">
+							<img class="Blogo" src="https://i.imgur.com/1YhfR9j.png">
+
+							<div class="imfor">
+
+								<p class="Malware">Malware</p>
+								<p class="num">8,105</p>
+
+							</div>
+
+							<div class="clear"> </div>
+						</div>
+						<div class="googlePlay">
+							<img class="Blogo" src="https://i.imgur.com/1YhfR9j.png">
+
+							<div class="imfor">
+
+								<p class="Malware">Malware</p>
+								<p class="num">617</p>
+
+							</div>
+
+							<div class="clear"> </div>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<button type="button" id="BackTop" class="toTop-arrow"></button>
+		<script>
+			$(function() {
+				$('#BackTop').click(function() {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 333);
+				});
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 100) {
+						$('#BackTop').fadeIn(222);
+					} else {
+						$('#BackTop').stop().fadeOut(222);
+					}
+				}).scroll();
+			});
+		</script>
+</body>
+
+</html>

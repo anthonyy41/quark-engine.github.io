@@ -1,0 +1,345 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+html {
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* CSS Reset end */
+
+#container{
+    /*保证footer是相对于container位置绝对定位*/
+    position:relative;  
+    width:100%;
+    min-height:100%; 
+    /*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/  
+    padding-bottom: 100px;  
+    box-sizing: border-box;
+
+}
+
+body{
+	font-family: Arial;
+}
+#head{
+	background-color: white;
+	color: rgba(3, 38, 49, 0.6);
+	width: 100%
+	height: 8%;
+	display: flex;
+	font-weight:bold;
+	border-bottom:1px rgba(223, 226, 219, 0.6) solid;
+	-moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	-webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	box-shadow:1px 1px 5px -2px rgba(20%,20%,40%,0.5);
+	
+}
+
+
+.logo{
+	max-width:120px;
+	padding: 10px;
+	display: inline-block;
+}
+
+
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    font-size: 18px;
+    text-decoration: none;  /* 移除超連結底線 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    padding: 10px 30px 10px 30px;
+}
+
+nav > ul {
+    background-color: white;
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+
+
+.hover:hover {
+    background-color: 	#778899;
+    color: white;
+}
+
+.currentpage {
+ 	color: #007799;
+ }
+
+
+ .border {
+    position:relative;
+    left:18%;
+    top: 5px;
+    width:70%;
+    border-top:3px solid #007799;
+}
+
+
+.right{
+	position: absolute;
+	right: 10px;
+}
+
+.flex_nav li{
+	display: inline;
+	float: left;
+}
+
+.body{
+	min-height: 470px;
+	width:100%;
+	padding: 50px 0px 20px 0px ;
+}
+
+.sqare{
+	background-color: rgba(223, 226, 219, 0.3);
+	min-height: 350px;
+	width: 30%;
+	display: block;
+	padding: 20px;
+	margin:0 auto;
+	-moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+  -webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+  box-shadow:0px 1px 2px -2px rgba(20%,20%,40%,0.5);
+}
+
+.center{
+	text-align:center;
+	line-height:50px;
+	font-size: 14px;
+	color: #6C7975;
+	z-index: 999;
+}
+
+.file{
+
+	width: 30%;
+	margin:0px auto;
+	padding-top: 40px;
+}
+
+#filename{
+	color:blue;
+	font-size: 14px;
+	color: #34A5BF;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 30px;
+	font-family: Arial,STHeiti,Microsoft JhengHei;
+}
+
+.dashB{
+	padding: 0.5% 1%;
+	font-size: 14px;
+	color: #818984;
+	font-weight:bold;
+}
+
+.googlePlay{
+	width:10%;
+	margin-top: 6px;
+	margin-right: 20px;
+	height: 50px;
+	background-color: white; 
+	display: block;
+	float: left;
+	padding: 0.5%;
+}
+
+.imfor{
+	float: right; 
+	margin-right: 5%; 
+	margin-top: 2%;
+}
+
+.Blogo{
+	width: 30%;
+}
+
+.Malware{
+	color: #534741;
+	font-size: 10px;
+}
+
+.num{
+	color: #C1272D;
+	margin-top: 1px; 
+	font-size: 20px;
+}
+
+
+.foot{
+	background-color: #DFE2DB;
+	width: 100%;
+	height: 88px;
+	position:absolute;
+    bottom:0px;
+    left:0px;
+    
+}
+
+.robertL{
+	width: 25%;
+	position: absolute;
+	left: 2px;
+	bottom: 90px;
+}
+
+.robertR{
+	width: 20%;
+	position: absolute;
+	right: 20px;
+	bottom: 85px;
+}
+
+.hint:hover:after{
+    content:attr(showhints);
+    position:absolute;    margin:0px auto;  top: 60%;
+    font-size: 8px; font-family: Arial;
+    height: auto; min-width: 100px;
+    text-align: left;    background: rgba(223, 226, 219, 0.5); color: #6C7975;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+.hint2:hover:after{
+    content:attr(showhints);
+    position:absolute;    margin:0px auto; right: 20px; top: 80%;
+    font-size: 8px; font-family: Arial;
+    height: auto; min-width: 100px;
+    text-align: left;    background: rgba(223, 226, 219, 0.5); color: #6C7975;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+.hint3:hover:after{
+    content:attr(showhints);
+    position:absolute;    
+    margin:0px auto;
+    right: 52%; top: 7%;
+    font-size: 12px; font-family: Arial;
+    height: auto; min-width: 50px;
+    text-align: left;    background: rgba(0, 0, 0, 0.5); color: #FFF;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+.upload{
+	margin-top: 15px;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+#upload-file{
+    display: none;
+}​
+
+.clear{
+	clear: both;
+}
+
+
+	@media only screen and(max-width: 780px){	
+		.body{
+			min-height: 400px;
+		}
+		.sqare{
+			min-height: 320px;
+			width: 80%;
+		}
+	}
+
+	@media only screen and(max-width: 680px){
+		.body{
+			min-height: 400px;
+		}
+		.sqare{
+			min-height: 300px;
+			width: 80%;
+		
+		}
+		.right{
+			left: 120px;
+		}
+		overflow-x: auto;
+
+	}
+
+	@media only screen and (max-width: 480px) {
+		.body{
+			min-height: 350px;
+		}
+		.sqare{
+			min-height: 300px;
+			width: 80%;
+		}
+		.center{
+			font-size: 12px;
+		}
+		.right{
+			left: 120px;
+		}
+
+		nav a{
+			font-size: 18px;
+		}
+
+		.Malware{
+		color: #534741;
+		font-size: 4px;
+		}
+
+		.num{
+		color: #C1272D;
+		margin-top: 2px; 
+		font-size: 10px;
+		}
+	}
+

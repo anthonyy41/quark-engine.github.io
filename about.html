@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quark</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Exo+2:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/flat-shiny-button-hover-effect/style.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<body>
+	<div id="container" class="warp">
+		<div id="head">
+			<a href="home.html"><img class="logo" src="https://i.imgur.com/os4Va2t.png"></a>
+			<div class="right">
+				<nav class="the-nav">
+					<ul class="flex_nav">
+						<li><a class="hover" href="home.html">Home</a></li>
+						<li class="hover"><a href="index.html">Upload</a></li>
+						<li><a class="currentpage" href="about.html">About Us<div class="border"></div></a></li>
+						<li><a class="hover" href="report.html">Twitter</a></li>
+						<li><a class="hover" href="https://github.com/quark-engine/quark-engine" target="https://github.com/quark-engine/quark-engine">Github</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="body main">
+			<p class="t1 center">The Team.</p>
+			<div class="member">
+				<img class="q_photo" src="https://i.imgur.com/Y6OHX1t.png">
+				<div class="content01">
+					<p class="name">
+						KunYu Chen / 陳坤裕<br>
+					</p>
+					<p class="title padding-top">Cofounder / Research＆.Development Engineer</p>
+					<p class="t2 padding-top">
+					KunYu Chen is a security researcher at Telecom Technology Center, Taiwan. Since 2014, he has been engaged in honeynet system research and the automation of malware analysis.<br><br> Also, he’s an open source activism who contributes to CPython, viper-framework and the founder of Quark-Engine and a security research group, TWBGC. He presented at HITCON CMT 101, PyCon Korea, PyCon Taiwan and COSCUP.
+					</p>
+				</div>
+			</div>
+
+			<div class="member">
+				<img class="q_photo" src="https://i.imgur.com/T1Hrime.png">
+				<div class="content01">
+					<p class="name">
+						JunWei Song / 宋駿瑋<br>
+					</p>
+					<p class="title padding-top">Cofounder / Research＆.Development Engineer</p>
+					<p class="t2 padding-top">
+					JunWei Song is a Security Researcher from Taiwan. A paranoid Pythonista who focuses on cybersecurity, reverse engineering, and malware analysis.<br><br> And as a CPython contributor, PyCon TW Review Board, presented at HITBSecConf, Europython, PyCon Taiwan, PyCon Korea, PyCon Malaysia. He’s the co-founder of Quark-Engine and a security research group, TWBGC.
+					</p>
+				</div>
+			</div>
+
+			<div class="member">
+				<img class="q_photo" src="https://i.imgur.com/zYe7d75.png">
+				<div class="content01">
+					<p class="name">
+						YunChen Liu / 劉昀臻<br>
+					</p>
+					<p class="title padding-top">Designer</p>
+					<p class="t2 padding-top">
+					YunChen Liu is a UI designer who is passionate about interaction design. She's the chief designer of Quark-Engine.
+					</p>
+				</div>
+			</div>
+
+			<div class="robertL bottom">
+				<span class="hint" showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/8dd9ymp.png"></span>
+			</div>
+			<div class="concept05">
+				<p class="t1">Sponsor</p>
+				<div class="line"></div>
+				<a href="https://www.ttc.org.tw/" target="https://www.ttc.org.tw/"><img class="sponsor_img" src="https://i.imgur.com/105fzMR.jpg"></a>
+			</div>
+			<div class="bttb">
+			<a href="#" id="fileupload" class="button ">Back To Top</a>
+			</div>
+			<div class="robertR bottom">
+				<span class="hint2" showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/stNkyI6.png"></span>
+			</div>
+		</div>
+
+		<button type="button" id="BackTop" class="toTop-arrow"></button>
+		<script>
+			$(function() {
+				$('#BackTop').click(function() {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 333);
+				});
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 100) {
+						$('#BackTop').fadeIn(222);
+					} else {
+						$('#BackTop').stop().fadeOut(222);
+					}
+				}).scroll();
+			});
+		</script>
+
+
+	</div>
+</body>
+
+</html>
+
+

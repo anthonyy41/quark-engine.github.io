@@ -1,0 +1,57 @@
+#circ-cont {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100%;
+  position: relative;
+  margin-top: 10px;
+  transition: all 0.2s ease-out;
+}
+#circ-cont #svg {
+  transform: rotate(-90deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 500;
+}
+#circ-cont #svg circle {
+  stroke-dashoffset: 0;
+  stroke: #ebebeb;
+  stroke-width: 15px;
+}
+#circ-cont #svg #bar {
+  stroke: #ebebeb;
+  stroke-width: 15px;
+
+}
+#circ-cont .shadow {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  right: 10px;
+  margin: auto;
+  opacity: 0.8;
+}
+#circ-cont .section {
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  bottom: 70px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+#circ-cont{
+  position: relative;
+  top: 5px;
+}
+
+#svg{
+  position: absolute;
+}
