@@ -20,7 +20,7 @@
 
 .rtable,
 
-// gradient on the last cells to hide the right shadow
+/* // gradient on the last cells to hide the right shadow */
 .rtable td:last-child,
 .rtable--flip tbody tr:last-child {
   background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
@@ -87,7 +87,10 @@
 }
 
 .choose{
-	position:absolute;    margin:0px auto;  top: 25%; right: 30%;
+  position:absolute;
+  margin:0px auto;  
+  top: 25%; 
+  right: 5%;
 	
 }
 
@@ -175,7 +178,7 @@
   position: relative;
   top:15px;
   left: 70px;
-  padding-right: 76%;
+  padding-right: 24%;
 
 }
 
