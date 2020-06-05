@@ -292,3 +292,10 @@
   margin-right: 3%;
   text-align: right;
 }
+.date{
+  position: absolute;
+    margin: 5px;
+    top: 25%;
+    right: 20%;
+    font-size: 15px;
+}
