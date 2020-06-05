@@ -173,6 +173,7 @@
 }
 
 .name{
+  font-weight: bold;
   float: left;
   color: #747A77;
   position: relative;
