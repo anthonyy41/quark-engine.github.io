@@ -1,0 +1,31 @@
+.member{
+	width: 80%;
+	height: 500px;
+	margin:0px auto;
+}
+
+.q_photo{
+	width: 40%;
+	
+}
+
+.content01{
+	width: 60%;
+	height: 500px;
+	padding: 90px 50px 50px 90px;
+	float: right;
+}
+
+.name{
+	font-family: Arial,Microsoft Yahei,Hiragino Sans GB;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.title{
+	color: #478FA0;
+}
+
+.padding-top{
+	padding-top: 24px;
+}

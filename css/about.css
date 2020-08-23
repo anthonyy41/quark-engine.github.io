@@ -1,31 +1,166 @@
-.member{
-	width: 80%;
-	height: 500px;
-	margin:0px auto;
+body {
+    /* padding-top: 5rem; */
+    background-color: #333;
+    color: aliceblue;
 }
 
-.q_photo{
-	width: 40%;
-	
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
 
-.content01{
-	width: 60%;
-	height: 500px;
-	padding: 90px 50px 50px 90px;
-	float: right;
+/* from firstpage css */
+
+.cover-container {
+    max-width: 42em;
 }
 
-.name{
-	font-family: Arial,Microsoft Yahei,Hiragino Sans GB;
-	font-size: 24px;
-	font-weight: bold;
+a, a:focus, a:hover {
+    color: #fff;
 }
 
-.title{
-	color: #478FA0;
+/*
+ * Header
+ */
+
+.masthead {
+    margin-bottom: 2rem;
 }
 
-.padding-top{
-	padding-top: 24px;
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+    .nav-masthead {
+        /* float: right; */
+    }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*back to top style*/
+
+.toTop-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+
+.toTop-arrow::before, .toTop-arrow::after {
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+    content: '';
+}
+
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.5rem;
+}
+
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.5rem;
+}
+
+.toTop-arrow:focus {
+    outline: none;
+}
+
+/*End of back to top*/
+
+/* page style */
+
+.backimg {
+    width: 100%;
+}
+
+.backimg_pic {
+    width: 100%;
+    height: 450px;
+    background-size: 1140px;
+    background-image: url(https://i.imgur.com/WrfMMrh.png);
+}
+
+.content {
+    padding: 100px 0 0 30px;
+}
+
+.TTC_logo {
+    width: 300px;
+    margin: 0px auto;
+    display: flex;
+}
+
+.bottom_pic_left {
+    width: 50%;
+    float: left;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.bottom_pic_right {
+    width: 20%;
+    float: right;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 200px;
 }
