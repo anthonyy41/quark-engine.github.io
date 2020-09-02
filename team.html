@@ -25,28 +25,83 @@
 
   <!-- Custom styles for this template -->
   <link href="css/team.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet" />
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script
+   async
+   src="https://www.googletagmanager.com/gtag/js?id=UA-177076073-1"
+ ></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() {
+     dataLayer.push(arguments);
+   }
+   gtag("js", new Date());
+
+   gtag("config", "UA-177076073-1");
+ </script>
 </head>
 
 <body>
-
   <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
-        <!-- <a href="firstpage.html">
-            <img class="logo" src="https://i.imgur.com/os4Va2t.png" alt="quark">
-          </a> -->
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link active" href="#">Team</a>
-          <a class="nav-link" href="report_list.html">Report</a>
-          <a class="nav-link" href="https://github.com/quark-engine/quark-engine"
-            target="https://github.com/quark-engine/quark-engine">Github</a>
+        <nav
+          class="navbar navbar-expand-lg navbar-dark nav-masthead nav-link"
+        >
+          <a href="index.html"
+          ><img
+            class="navbar-brand"
+            src="https://imgur.com/vko1OnH.png"
+            alt="quark"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link active" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="report.html">Report</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/quark-engine/quark-engine"
+                  target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
   </div>
-
+  
   <main role="main">
 
     <!-- gallery test bckup -->
@@ -116,8 +171,8 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-6">
-          <img class="pic" src="https://i.imgur.com/Y6OHX1t.png" alt="Generic placeholder image" width="100%">
-          <div class="introduction" style="padding:50px">
+          <img class="pic member" src="https://i.imgur.com/Y6OHX1t.png" alt="Generic placeholder image" width="100%">
+          <div class="introduction">
             <h2>KunYu Chen <br>陳坤裕</h2>
             <p></p>
             <h3>Founder / Research＆.Development Engineer</h3>
@@ -134,8 +189,8 @@
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-6">
 
-          <img class="pic" src="https://i.imgur.com/T1Hrime.png" alt="Generic placeholder image" width="100%">
-          <div class="introduction" style="padding:50px">
+          <img class="pic member" src="https://i.imgur.com/T1Hrime.png" alt="Generic placeholder image" width="100%">
+          <div class="introduction">
             <h2>JunWei Song <br>宋駿瑋</h2>
             <p></p>
             <h3>Cofounder / Research＆.Development Engineer</h3>
@@ -149,8 +204,8 @@
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-6">
 
-          <img class="pic" src="https://i.imgur.com/AeVCRZP.png" alt="Generic placeholder image" width="100%">
-          <div class="introduction" style="padding:50px">
+          <img class="pic member" src="https://i.imgur.com/AeVCRZP.png" alt="Generic placeholder image" width="100%">
+          <div class="introduction">
             <h2>YuShiang Dang <br>鄧宇翔</h2>
             <p></p>
             <h3>Engineer</h3>
@@ -163,8 +218,8 @@
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-6">
 
-          <img class="pic" src="https://i.imgur.com/zYe7d75.png" alt="Generic placeholder image" width="100%">
-          <div class="introduction" style="padding:50px">
+          <img class="pic member" src="https://i.imgur.com/zYe7d75.png" alt="Generic placeholder image" width="100%">
+          <div class="introduction">
             <h2>YunChen Liu <br>劉昀臻</h2>
             <p></p>
             <h3>Designer</h3>
@@ -191,6 +246,29 @@
       <img class="bottom_pic_left" src="https://i.imgur.com/8dd9ymp.png">
       <img class="bottom_pic_right" src="https://i.imgur.com/stNkyI6.png">
     </footer>
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+      $(function () {
+        $("#BackTop").click(function () {
+          $("html,body").animate(
+            {
+              scrollTop: 0,
+            },
+            333
+          );
+        });
+        $(window)
+          .scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $("#BackTop").fadeIn(222);
+            } else {
+              $("#BackTop").stop().fadeOut(222);
+            }
+          })
+          .scroll();
+      });
+    </script>
   </main>
 
 </body>

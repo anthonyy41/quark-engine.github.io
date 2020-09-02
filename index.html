@@ -1,84 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="favicon.ico" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+    <title>Quark Engine</title>
 
-  <title>Quark Engine</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/cover/"
+    />
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
-  <link href="css/index.css" rel="stylesheet">
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177076073-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body class="text-center">
+      gtag("config", "UA-177076073-1");
+    </script>
+  </head>
 
-  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <!-- <a href="firstpage.html">
-          <img class="logo" src="https://i.imgur.com/os4Va2t.png" alt="quark">
-        </a> -->
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="team.html">Team</a>
-          <a class="nav-link" href="report_list.html">Report</a>
-          <a class="nav-link" href="https://github.com/quark-engine/quark-engine"
-            target="https://github.com/quark-engine/quark-engine">Github</a>
-        </nav>
-      </div>
-    </header>
+  <body class="text-center">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <nav
+            class="navbar navbar-expand-lg navbar-dark nav-masthead nav-link"
+          >
+            <a href="index.html"
+              ><img
+                class="navbar-brand"
+                src="https://imgur.com/vko1OnH.png"
+                alt="quark"
+            /></a>
 
-    <main role="main" class="inner cover">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="report.html">Report</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://github.com/quark-engine/quark-engine"
+                    target="_blank"
+                    >Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-      <a href="index.html">
-        <img class=" logo" src="https://i.imgur.com/os4Va2t.png" alt="quark">
-      </a>
+      <main role="main" class="inner cover">
+        <a href="index.html">
+          <img
+            class="logo light"
+            src="https://i.imgur.com/os4Va2t.png"
+            alt="quark"
+          />
+          <img
+            class="logo dark"
+            src="https://imgur.com/vko1OnH.png"
+            alt="quark"
+          />
+        </a>
 
-      <h2 class="cover-heading">Quark, An Obfuscation-Neglect
-        Android Malware Scoring System</h2>
-      <p class="lead">Android malware analysis engine is not a new story.
-        Every antivirus company has their own secrets to build it.
-        With curiosity, we develop a malware scoring system from the
-        perspective of Taiwan Criminal Law in an easy but solid way.</p>
-      <p class="lead">
-        <a href="https://youtu.be/3oIvInNNZ6A?t=23212" target="_blank" class="btn btn-lg btn-secondary">Get more</a>
-      </p>
-    </main>
+        <h2 class="cover-heading">
+          Quark, An Obfuscation-Neglect Android Malware Scoring System
+        </h2>
+        <p class="lead">
+          Android malware analysis engine is not a new story. Every antivirus
+          company has their own secrets to build it. With curiosity, we develop
+          a malware scoring system from the perspective of Taiwan Criminal Law
+          in an easy but solid way.
+        </p>
+        <p class="lead">
+          <a
+            href="https://youtu.be/3oIvInNNZ6A?t=23212"
+            target="_blank"
+            class="btn btn-lg btn-secondary"
+            >Get more</a
+          >
+        </p>
+      </main>
 
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
             href="https://twitter.com/mdo">@mdo</a>.</p> -->
 
-        <p>Sponsor by <a href="https://www.ttc.org.tw/">Telecom Technology Center.</a> 2020.</p>
+          <p>
+            Sponsor by
+            <a href="https://www.ttc.org.tw/">Telecom Technology Center.</a>
+            2020.
+          </p>
 
-        <a href="https://www.ttc.org.tw/" target="_blank"><img src="https://i.imgur.com/105fzMR.jpg" class="TTC_logo"
-            alt="TTC"></a>
+          <a href="https://www.ttc.org.tw/" target="_blank"
+            ><img
+              src="https://i.imgur.com/105fzMR.jpg"
+              class="TTC_logo"
+              alt="TTC"
+          /></a>
 
-        <img class="bottom_pic_left" src="https://i.imgur.com/8dd9ymp.png">
-        <img class="bottom_pic_right" src="https://i.imgur.com/stNkyI6.png">
-      </div>
-    </footer>
-  </div>
-
-</body>
-
+          <img class="bottom_pic_left" src="https://i.imgur.com/8dd9ymp.png" />
+          <img class="bottom_pic_right" src="https://i.imgur.com/stNkyI6.png" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
