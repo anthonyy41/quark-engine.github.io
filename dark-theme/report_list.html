@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quark</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/collapse/style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src="js/collapse/script.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/toggle/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/report_list.css">
+	<link rel="stylesheet" href="css/score/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/report.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/simple-search-bar/style.css">
+	<link rel="stylesheet" href="css/circular-progress/style.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico" />
+
+</head>
+
+<body style="overflow-y: scroll; overflow-x: hidden;">
+
+	<div id="container" class="warp">
+		<div id="head">
+			<a href="index.html"><img class="logo" src="https://i.imgur.com/os4Va2t.png"></a>
+			<div class="right">
+				<nav class="the-nav">
+					<ul class="flex_nav">
+						<li><a class="currentpage" href="index.html">Home</a></li>
+						<li><a class="hover" href="about.html">About Us</a></li>
+						<li><a class="hover" href="#">Reports<div class="border"></div></a>
+						<li><a class="hover" href="https://github.com/quark-engine/quark-engine"
+								target="https://github.com/quark-engine/quark-engine">Github</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- <span class="hint3" showhints="Score：75">
+		<div class="score" style="height:175px;">
+
+			<p class="t1 center">Reports</p>
+
+
+		</div>
+
+		</span> -->
+
+
+
+
+		<div class="body main">
+			<div class="robertL">
+				<span class="hint"
+					showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/8dd9ymp.png"></span>
+			</div>
+
+			<div class="robertR">
+				<span class="hint2"
+					showhints="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.">
+					<img src="https://i.imgur.com/stNkyI6.png"></span>
+			</div>
+
+			<div class="middle_nav">
+				<p class="report">Report</p>
+				<div class="line"> </div>
+				<!-- <div class="choose">
+					<select id="confidence">
+						<option value="hide"> Confidence</option>
+						<option value="20" rel="icon-temperature">20%</option>
+						<option value="40">40%</option>
+						<option value="60">60%</option>
+						<option value="80">80%</option>
+						<option value="100">100%</option>
+						<option value="all">All</option>
+					</select>
+				</div>
+				<div class="wrap2">
+					<div class="search">
+						<input type="text" class="searchTerm" placeholder=" Search......">
+						<button type="submit" class="searchButton">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="close">
+					<input type="checkbox" id="try" class="plus-minus">
+				</div> -->
+			</div>
+
+			<div class="mainReport">
+				<div class="detail">
+					<div class="container2 container">
+						<div class="col-md-6 col-sm-6">
+
+							<div class="panel-group" id="bs-collapse">
+
+								<a
+									href="reports/report_5751cfdf656f2a5ee021940c5448a77e5b921d1510d2abfa520a57d02c74821e0f5c2e4935bea2554c440072d32fc22bb8317a85dabbbc7c9cca9d1c077793c2.html">
+									<div class="card">
+										<div class="card-header">
+											<p class="card-text">com.wacosoft.appmill_s304.apk</p>
+											<p class="card-title">Android Analysis Report</p>
+										</div>
+										<div class="card-body">
+											<h6>Hash: </h6>
+											<p class="card-text">
+												5751cfdf656f2a5ee021940c5448a77e5b921d1510d2abfa520a57d02c74821e0f5c2e4935bea2554c440072d32fc22bb8317a85dabbbc7c9cca9d1c077793c2
+											</p>
+
+										</div>
+										<div class="card-foot">
+											<p class="card-text">05.06.2020</p>
+
+										</div>
+									</div>
+								</a>
+
+
+
+
+
+
+
+							</div>
+
+							<!-- end of #bs-collapse  -->
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="foot">
+
+
+			</div>
+		</div>
+
+		<button type="button" id="BackTop" class="toTop-arrow"></button>
+		<script>
+			$(function () {
+				$('#BackTop').click(function () {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 333);
+				});
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#BackTop').fadeIn(222);
+					} else {
+						$('#BackTop').stop().fadeOut(222);
+					}
+				}).scroll();
+			});
+		</script>
+</body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168651268-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-168651268-1');
+</script>
+
+</html>

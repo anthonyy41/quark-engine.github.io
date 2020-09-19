@@ -1,0 +1,121 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    color: #6c7975;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding-top: 3rem;
+    /* padding-bottom: 3rem; */
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+/* carousel size test */
+
+.carousel-inner {
+    height: 550px;
+    background-size: contain;
+}
+
+.carousel.slide {
+    margin-bottom: 20px;
+}
+
+.carousel_pic {
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 300px;
+    }
+}
+
+.cover-heading {
+    text-align: center;
+}
+
+/* button cust */
+.glow-on-hover {
+    width: 100%;
+    /* height: 50px; */
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #007799;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #007799; */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

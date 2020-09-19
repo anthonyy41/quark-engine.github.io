@@ -1,34 +1,12 @@
 .nav-item {
     width: fit-content;
-    margin: 0 20px 0 0;
+    margin: auto;
 }
 
-.nav-item a {
-    color: inherit;
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    padding: 10px 30px 10px 30px;
-}
-
-/* nav setting active and normal style */
-.nav-masthead .nav-link:hover {
-    background-color: #778899;
-    color: #fff !important;
-}
-
-.nav-masthead .nav-link.active:hover {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.5) !important;
-}
+/* nav style */
 
 .cover-container {
     max-width: 60em;
-}
-
-.nav-link.active {
-    color: #007799 !important;
-    border-bottom-color: #007799 !important;
 }
 
 /* nav logo  */
@@ -38,11 +16,11 @@
 }
 
 /* nav text style */
+
 .nav-masthead .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
-    /* color: rgba(255, 255, 255, 0.5); */
-    color: rgba(3, 38, 49, 1);
+    color: rgba(255, 255, 255, 0.5);
     background-color: transparent;
     border-bottom: 0.25rem solid transparent;
 }
@@ -55,24 +33,6 @@
 @media screen and (max-width: 768px) {
     .navbar-brand {
         width: 150px;
-    }
-
-    .nav-item {
-        margin: auto;
-        padding-bottom: 5px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .footer {
-        margin-top: 10rem;
-    }
-
-    .Sponsor {
-        font-size: 30px;
-        font-weight: bold;
-        color: #6c7975;
-        line-height: 1.5;
     }
 }
 
