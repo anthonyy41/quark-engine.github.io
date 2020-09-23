@@ -46,11 +46,13 @@ body {
 /* .logo.dark {
     display: block;
 } */
+
 .logo.light {
     display: block;
 }
 
 /* dark theme test*/
+
 @media (prefers-color-scheme: dark) {
     /* body {
     background-color: white;
@@ -110,9 +112,11 @@ body {
 }
 
 /* main--start */
+
 .inner.cover {
     display: none;
 }
+
 /* main--end */
 
 @media (min-width: 48em) {
@@ -138,10 +142,6 @@ body {
  * Footer
  */
 
-.mastfoot {
-    /* color: rgba(255, 255, 255, 0.5); */
-}
-
 /* get more style */
 
 .btn.btn-lg.btn-secondary {
@@ -159,6 +159,7 @@ body {
 }
 
 /* page style */
+
 .logo {
     margin: 40px 0 30px 0;
     max-width: 100%;
@@ -188,29 +189,57 @@ body {
 }
 
 /* css animation test */
+
 @media screen and (min-width: 769px) {
-    @keyframes typing {
-        from {
+    .lead.content {
+        font-size: 1.3rem;
+        margin: 3rem 0 3rem 0;
+    }
+    .css-typing p {
+        border-right: 0em solid #81c2d6;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .css-typing p:nth-child(1) {
+        width: 100%;
+        -webkit-animation: type 2s steps(40, end);
+        animation: type 2s steps(40, end);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    @keyframes type {
+        0% {
             width: 0;
         }
+        99.9% {
+            border-right: solid #81c2d6;
+        }
+        100% {
+            border: none;
+        }
     }
-    @keyframes blink-caret {
+    @-webkit-keyframes type {
+        0% {
+            width: 0;
+        }
+        99.9% {
+            border-right: solid #81c2d6;
+        }
+        100% {
+            border: none;
+        }
+    }
+    @keyframes blink {
         50% {
             border-color: transparent;
         }
     }
-
-    .print {
-        display: block;
-        font: bold 200% Consolas, Monaco, monospace;
-        /* border-right: 0.1em solid; */
-        width: 25em; /* fallback */
-        /* width: 30ch; # of chars */
-        margin: 2em 1em;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 3s steps(30, end) 1,
-            /* # of steps = # of chars */ /*animation: typing 20s steps(30, end),*/ /*英文速度*/ blink-caret 0.5s
-                step-end infinite alternate;
+    @-webkit-keyframes blink {
+        50% {
+            border-color: tranparent;
+        }
     }
 }
